@@ -59,7 +59,7 @@ import net.socialgamer.cah.cardcast.CardcastModule.CardcastCardId;
 public class CardcastService {
   private static final Logger LOG = Logger.getLogger(CardcastService.class);
 
-  private static final String HOSTNAME = "api.cardcastgame.com";
+  private static final String HOSTNAME = System.getenv("CARDCAST_HOSTNAME");
 
   /**
    * Base URL to the Cardcast API.
